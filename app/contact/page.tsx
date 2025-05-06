@@ -26,24 +26,35 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitError(false);
     
     // Simulate form submission
     setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
-      
-      // Reset form
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-      
-      // Hide success message after 5 seconds
-      setTimeout(() => {
-        setSubmitSuccess(false);
-      }, 5000);
+      try {
+        setIsSubmitting(false);
+        setSubmitSuccess(true);
+        
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          setSubmitSuccess(false);
+        }, 5000);
+      } catch (error) {
+        setIsSubmitting(false);
+        setSubmitError(true);
+        
+        // Hide error message after 5 seconds
+        setTimeout(() => {
+          setSubmitError(false);
+        }, 5000);
+      }
     }, 1500);
   };
 

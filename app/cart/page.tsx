@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/app/context/CartContext";
-import { Star, ShoppingBag, ArrowLeft, Heart } from "lucide-react";
+import { Star, ShoppingBag, ArrowLeft } from "lucide-react";
 
 export default function CartPage() {
   const { cartItems, updateQuantity, removeFromCart, cartTotal } = useCart();
