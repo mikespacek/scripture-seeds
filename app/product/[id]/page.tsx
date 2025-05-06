@@ -66,11 +66,10 @@ const products = [
   // Rest of the products omitted for brevity
 ];
 
-interface ProductPageProps {
-  params: {
-    id: string;
-  };
-}
+type ProductPageProps = {
+  params: { id: string };
+  searchParams?: { [key: string]: string | string[] | undefined };
+};
 
 export default function ProductDetailPage({ params }: ProductPageProps) {
   const product = products.find(p => p.id === params.id);
