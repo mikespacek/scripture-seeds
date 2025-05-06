@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import ProductClient from "./product-client";
 
@@ -63,8 +61,16 @@ const products = [
   // Rest of the products omitted for brevity
 ];
 
-export default function ProductDetailPage({ params }: { params: { id: string } }) {
-  const product = products.find(p => p.id === params.id);
+// Generate static params for all products
+export function generateStaticParams() {
+  return products.map((product) => ({
+    id: product.id,
+  }));
+}
+
+// Main page component
+export default function Page({ params }) {
+  const product = products.find((p) => p.id === params.id);
   
   if (!product) {
     notFound();
