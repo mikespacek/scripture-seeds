@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Scripture Seeds E-Commerce Store
+
+An e-commerce website selling scripture-based journals and eBooks for babies and young children.
+
+## Features
+
+- Modern, responsive design with Tailwind CSS
+- Product browsing and filtering
+- Product detail pages
+- Shopping cart functionality
+- Contact form
+- About page
+
+## Main Product
+
+- **365 Scriptures + Prayers for Your Baby's First Year Journal**: A beautiful journal featuring daily scriptures, prayers, and space to record precious memories.
+
+## Tech Stack
+
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Context API for state management
+- React Hooks
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ and npm
+
+### Installation
+
+1. Clone the repository
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. Navigate to the project directory
+   ```bash
+   cd ecom-site
+   ```
+
+3. Install dependencies
+   ```bash
+   npm install
+   ```
+
+4. Start the development server
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and navigate to `http://localhost:3000`
+
+## Build for Production
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The site can be deployed on Vercel or any other hosting service that supports Next.js applications.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Future Enhancements
 
-## Learn More
+- User authentication
+- Payment processing integration
+- Admin dashboard for product management
+- Order tracking functionality
+- Email notifications
+- Customer reviews
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the MIT License.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Acknowledgments
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Images to be replaced with actual product photos
+- Placeholder data to be replaced with real product data
+- Stripe integration to be added for payment processing
